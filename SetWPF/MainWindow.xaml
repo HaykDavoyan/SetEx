@@ -1,0 +1,25 @@
+﻿<Window x:Class="SetWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SetWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <ComboBox HorizontalAlignment="Left" Height="34" Margin="27,34,0,0" VerticalAlignment="Top" Width="130" Cursor="Hand"/>
+            <ComboBox HorizontalAlignment="Left" Height="34" Margin="196,34,0,0" VerticalAlignment="Top" Width="130" Cursor="Hand">
+                <ComboBoxItem Content="UNION"/>
+                <ComboBoxItem Content="INTERSECTION"/>
+                <ComboBoxItem Content="DIFFERENCE"/>
+                <ComboBoxItem Content="SYMMETRIC DIFF"/>
+            </ComboBox>
+        </Grid>
+        <ComboBox HorizontalAlignment="Left" Height="34" Margin="364,35,0,0" VerticalAlignment="Top" Width="130" Cursor="Hand"/>
+        <Button Name="EvaluteButton" Content="Evalute" HorizontalAlignment="Left" Height="34" Margin="556,34,0,0" VerticalAlignment="Top" Width="118" Cursor="Hand"/>
+        <ListBox Margin="27,116,643,10"/>
+        <ListBox Margin="364,116,306,10"/>
+        <ListBox Margin="556,116,117,10"/>
+    </Grid>
+</Window>
